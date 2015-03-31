@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>smftricks:PMM</id>
+	<name>Profile Moderator Management</name>
+	<version>3.0</version>
+	<type>modification</type>
+	
+	<!-- SMF 2.0.x Install -->
+	<install for="2.1 Beta 1">
+
+		<!-- Template File -->
+		<require-dir name="Themes" destination="$boarddir">Template File</require-dir>
+
+		<!-- Source File -->
+		<require-dir name="Sources" destination="$boarddir">Source File</require-dir>
+
+		<!-- Language Edits -->
+		<modification type="file" format="xml">languages.xml</modification>
+
+		<!-- Hooks -->
+		<code>hooks.php</code>
+
+	</install>
+	
+	<!-- SMF 2.0.x Uninstall -->
+	<uninstall for="2.1 Beta 1">
+
+		<!-- Template -->
+		<remove-file name="$themedir/ModeratorManagement.template.php">Remove template</remove-file>
+
+		<!-- Source -->
+		<remove-file name="$sourcedir/Profile-ModeratorManagement.php">Remove source file</remove-file>
+
+		<!-- Language Edits -->
+		<modification type="file" format="xml" reverse="true">languages.xml</modification>
+
+		<!-- Hooks Remove -->
+		<code>remove.php</code>
+
+	</uninstall>
+	
+</package-info>
