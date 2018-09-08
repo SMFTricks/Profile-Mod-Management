@@ -5,9 +5,12 @@
 	<name>Profile Moderator Management</name>
 	<version>3.0</version>
 	<type>modification</type>
-	
+
 	<!-- SMF 2.0.x Install -->
-	<install for="2.1 Beta 1">
+	<install for="2.1 - 2.1.99, 2.1 Beta 1 - 3">
+
+		<!-- Mod Readme -->
+		<readme parsebbc="true" type="file">readme.txt</readme>
 
 		<!-- Template File -->
 		<require-dir name="Themes" destination="$boarddir">Template File</require-dir>
@@ -19,25 +22,20 @@
 		<modification type="file" format="xml">languages.xml</modification>
 
 		<!-- Hooks -->
-		<code>hooks.php</code>
-
+		<hook hook="integrate_pre_profile_areas" function="ProfileModManagement::Manage_profileAreas" file="$sourcedir/Profile-ModManagement.php" />
+		<hook hook="integrate_profile_save" function="ProfileModManagement::Manage_profileSave" file="$sourcedir/Profile-ModManagement.php" />
 	</install>
-	
+
 	<!-- SMF 2.0.x Uninstall -->
-	<uninstall for="2.1 Beta 1">
+	<uninstall for="2.1 - 2.1.99, 2.1 Beta 1 - 3">
 
 		<!-- Template -->
-		<remove-file name="$themedir/ModeratorManagement.template.php">Remove template</remove-file>
+		<remove-file name="$themedir/Profile-ModManagement.template.php">Remove template</remove-file>
 
 		<!-- Source -->
-		<remove-file name="$sourcedir/Profile-ModeratorManagement.php">Remove source file</remove-file>
+		<remove-file name="$sourcedir/Profile-ModManagement.php">Remove source file</remove-file>
 
 		<!-- Language Edits -->
 		<modification type="file" format="xml" reverse="true">languages.xml</modification>
-
-		<!-- Hooks Remove -->
-		<code>remove.php</code>
-
 	</uninstall>
-	
 </package-info>

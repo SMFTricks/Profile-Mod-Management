@@ -8,9 +8,8 @@
 		<operation>
 			<search position="end" />
 			<add><![CDATA[// Profile Moderator Management
-$txt['moderatormanagement'] = 'Moderator Managment';
-$txt['moderatormanagement_desc'] = 'Here you can select the boards the user will moderate.';
-$txt['moderatormanagement_select_boards'] = 'Select Boards';]]></add>
+$txt['modmanagement'] = 'Moderator Managment';
+$txt['modmanagement_desc'] = 'Here you can select the boards the user will moderate.';]]></add>
 		</operation>
 	</file>
 	
