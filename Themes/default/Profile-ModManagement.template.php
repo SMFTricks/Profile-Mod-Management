@@ -6,8 +6,8 @@
  * @package Profile Moderator Management
  * @version 3.0
  * @author Diego Andrés <diegoandres_cortes@outlook.com>
- * @copyright Copyright (c) 2018, Diego Andrés
- * @license http://www.mozilla.org/MPL/MPL-1.1.html
+ * @copyright Copyright (c) 2019, SMF Tricks
+ * @license http://www.mozilla.org/MPL/ MPL 2.0
  */
 
 // The template for Moderator Board Managment.
@@ -49,8 +49,7 @@ function template_Manage_profileMod()
 
     echo '
 				</ul>
-    		</div><!-- .flow_hidden boardslist -->
-
+    		</div>
 			<input type="checkbox" name="all" id="check_all" value="" onclick="invertAll(this, this.form, \'mod_brd\');" class="check" /><i> <label for="check_all">', $txt['check_all'], '</label></i><br />';
 
 	// Go and save
@@ -59,5 +58,5 @@ function template_Manage_profileMod()
 	echo '
 		</div><!-- .windowbg -->
 	</form>
-	<br>';
+	<br />';
 }

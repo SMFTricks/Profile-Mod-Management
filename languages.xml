@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
-	<id>smftricks:PMM</id>
+	<id>din1031:ProfilModeratorManagment</id>
 	<version>3.0</version>
 	
 	<file name="$languagedir/Profile.english.php">
@@ -10,6 +10,31 @@
 			<add><![CDATA[// Profile Moderator Management
 $txt['modmanagement'] = 'Moderator Managment';
 $txt['modmanagement_desc'] = 'Here you can select the boards the user will moderate.';]]></add>
+		</operation>
+	</file>
+	<file name="$languagedir/Profile.english-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[// Profile Moderator Management
+$txt['modmanagement'] = 'Moderator Managment';
+$txt['modmanagement_desc'] = 'Here you can select the boards the user will moderate.';]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Profile.spanish.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[// Profile Moderator Management
+$txt['modmanagement'] = 'Manejar Moderador';
+$txt['modmanagement_desc'] = 'Aquí pouedes seleccionar en qué foros será moderador el usuario.';]]></add>
+		</operation>
+	</file>
+	<file name="$languagedir/Profile.spanish-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[// Profile Moderator Management
+$txt['modmanagement'] = 'Manejar Moderador';
+$txt['modmanagement_desc'] = 'Aquí pouedes seleccionar en qué foros será moderador el usuario.';]]></add>
 		</operation>
 	</file>
 	
