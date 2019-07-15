@@ -7,7 +7,7 @@
  * @version 3.0
  * @author Diego Andrés <diegoandres_cortes@outlook.com>
  * @copyright Copyright (c) 2019, SMF Tricks
- * @license http://www.mozilla.org/MPL/ MPL 2.0
+ * @license https://www.mozilla.org/en-US/MPL/2.0/
  */
 
 // The template for Moderator Board Managment.
