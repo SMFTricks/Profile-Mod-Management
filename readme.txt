@@ -5,7 +5,7 @@
 [hr]
 [size=8pt]
 [size=13pt][color=red]Introduction[/color][/size]
-   [size=8pt]Simple Pokes provides a very simple way to grant moderator privilegies to your users in specific boards.[/size]
+   [size=8pt]Profile Moderator Management provides a very simple way to grant moderator privileges to your users in specific boards.[/size]
 [/size]
 [hr]
 [size=13pt][color=red]Features[/color][/size]
