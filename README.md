@@ -6,10 +6,10 @@
 - Developed by [Diego Andrés](https://github.com/DiegoAndresCortes)
 
 ## Introduction
-A very simple way to grant moderator privilegies to your users in specific boards
+* A very simple way to grant moderator privilegies to your users in specific boards
 
 ## Requirements
-SMF 2.1 only
+* SMF 2.1 only
 
 ## How to install
 * You can install Profile Moderator Management through the package manager of your forum administration.
