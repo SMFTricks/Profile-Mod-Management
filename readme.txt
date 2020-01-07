@@ -3,10 +3,8 @@
 [center][size=14pt]Profile Moderator Management[/size][/center]
 
 [hr]
-[size=8pt]
 [size=13pt][color=red]Introduction[/color][/size]
    [size=8pt]Profile Moderator Management provides a very simple way to grant moderator privileges to your users in specific boards.[/size]
-[/size]
 [hr]
 [size=13pt][color=red]Features[/color][/size]
   [size=11pt]- Add/Remove moderator[/size]
