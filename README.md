@@ -6,6 +6,7 @@
 <img src="https://img.shields.io/badge/License-MPL 2.0-a05a3f?style=flat-square"> <img src="https://img.shields.io/badge/SMF-2.1-3f73a0?style=flat-square">
 
 - Developed by [Diego Andrés](https://github.com/DiegoAndresCortes)
+- Original author: [ディン1031](https://www.simplemachines.org/community/index.php?action=profile;u=10466)
 
 ## Introduction
 * A very simple way to grant moderator privilegies to your users in specific boards
