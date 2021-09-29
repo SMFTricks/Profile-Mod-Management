@@ -1,62 +1,72 @@
 <?php
 
 /**
- * Profile-ModManagement.template.php
- *
  * @package Profile Moderator Management
- * @version 3.0
+ * @version 3.1
  * @author Diego Andrés <diegoandres_cortes@outlook.com>
- * @copyright Copyright (c) 2019, SMF Tricks
+ * @copyright Copyright (c) 2021, SMF Tricks
  * @license https://www.mozilla.org/en-US/MPL/2.0/
  */
 
-// The template for Moderator Board Managment.
 function template_Manage_profileMod()
 {
 	global $context, $scripturl, $txt;
 	
 	echo '
-	<form method="post" action="', $scripturl, '?action=profile;area=modmanagement;u=', $context['id_member'], ';save" name="creator" id="creator" accept-charset="', $context['character_set'], '">
+	<form method="post" action="', $scripturl, '?action=profile;area=modmanagement;u=', $context['id_member'], ';save" name="moderatormanagement" id="moderatormanagement">
 		<div class="cat_bar">
 			<h3 class="catbg profile_hd">
 				', $txt['modmanagement'], '
 			</h3>
 		</div>
 		<p class="information">', $txt['modmanagement_desc'], '</p>
-		<div class="windowbg">
-			<div class="flow_hidden boardslist">
-				<ul>';
+		<div class="windowbg">';
 
-	foreach ($context['categories'] as $category)
-    {
-        echo '
-					<li>
-						<a href="javascript:void(0);" onclick="selectBoards([', implode(', ', $category['child_ids']), '], \'creator\'); return false;">', $category['name'], '</a>
-            			<ul>';
+			// Add the board list
+			boards_list();
 
-        foreach ($category['boards'] as $board)
-        {
-            echo '
-							<li style="margin-', $context['right_to_left'] ? 'right' : 'left', ': ', $board['child_level'], 'em;">
-								<label for="mod_brd', $board['id'], '"><input type="checkbox" id="brd', $board['id'], '" name="mod_brd[', $board['id'], ']" value="', $board['id'], '"', !empty($board['selected']) ? ' checked' : '', '> ', $board['name'], '</label>
-							</li>';
-        }
-
-        echo '
-						</ul>
-					</li>';
-    }
-
-    echo '
-				</ul>
-    		</div>
-			<input type="checkbox" name="all" id="check_all" value="" onclick="invertAll(this, this.form, \'mod_brd\');" class="check" /><i> <label for="check_all">', $txt['check_all'], '</label></i><br />';
-
-	// Go and save
-	template_profile_save();
+			// Go and save
+			template_profile_save();
 
 	echo '
 		</div><!-- .windowbg -->
 	</form>
 	<br />';
+}
+
+function boards_list()
+{
+	global $context, $txt;
+
+	echo '
+							<fieldset id="mod_boards">
+								<legend>', $txt['modmanagement_select'], '</legend>
+								<ul class="padding floatleft">';
+
+	foreach ($context['categories'] as $category)
+	{
+			echo '
+									<li class="category">
+										<a href="javascript:void(0);" onclick="selectBoards([', implode(', ', $category['child_ids']), '], \'moderatormanagement\'); return false;"><strong>', $category['name'], '</strong></a>
+										<ul>';
+
+		foreach ($category['boards'] as $board)
+		{
+				echo '
+											<li class="board" style="margin-', $context['right_to_left'] ? 'right' : 'left', ': ', $board['child_level'], 'em;">
+												<input type="checkbox" name="modmanagement[', $board['id'], ']" id="brd', $board['id'], '" value="', $board['id'], '"', $board['selected'] ? ' checked' : '', '> <label for="brd', $board['id'], '">', $board['name'], '</label>
+											</li>';
+		}
+
+		echo '
+										</ul>
+									</li>';
+	}
+
+	echo '
+								</ul>
+								<br class="clear"><br>
+								<input type="checkbox" id="checkall_check" onclick="invertAll(this, this.form, \'modmanagement\');">
+								<label for="checkall_check"><em>', $txt['check_all'], '</em></label>
+							</fieldset>';
 }
