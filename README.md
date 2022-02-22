@@ -16,7 +16,7 @@ Profile Moderator Management provides a very simple way to grant moderator privi
 
 ### Localization
 - ![English](https://www.simplemachines.org/site_images/lang/english.gif) English
-- ![Russian](https://www.simplemachines.org/site_images/lang/spanish_es.gif) Spanish
+- ![Spanish](https://www.simplemachines.org/site_images/lang/spanish_es.gif) Spanish
 ---
 ### [Changelog](https://github.com/SMFTricks/Profile-Mod-Management/blob/master/CHANGELOG.md)
 ### [GitHub](https://github.com/SMFTricks/Profile-Mod-Management)
