@@ -4,7 +4,7 @@
  * @package Profile Moderator Management
  * @version 3.1
  * @author Diego Andrés <diegoandres_cortes@outlook.com>
- * @copyright Copyright (c) 2021, SMF Tricks
+ * @copyright Copyright (c) 2022, SMF Tricks
  * @license https://www.mozilla.org/en-US/MPL/2.0/
  */
 
@@ -72,12 +72,8 @@ class ProfileModManagement
 	 */
 	public static function Manage_profileSave(&$profile_vars, &$post_errors, $memID, $cur_profile, $current_area)
 	{
-		if ($current_area == 'modmanagement')
-			if (empty($post_errors))
-			{
+		if ($current_area == 'modmanagement' && empty($post_errors))
 				self::Manage_profileDo($memID);
-				$force_redirect = false;
-			}
 	}
 
 	/**
