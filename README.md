@@ -1,22 +1,21 @@
- <p align="center">
-    <img src="https://smftricks.com/logos/logo.png">
- </p>
+![SMF Tricks - Free & Premium Mods and Themes for SMF](https://smftricks.com/logos/logo.png)
 
-## Profile Moderator Management
-<img src="https://img.shields.io/badge/License-MPL 2.0-a05a3f?style=flat-square"> <img src="https://img.shields.io/badge/SMF-2.1-3f73a0?style=flat-square">
+# Profile Moderator Management
+![License](https://img.shields.io/badge/License-MPL%202.0-248049) ![Hooks Only](https://img.shields.io/badge/Hooks%20Only-Yes-6041a3) ![SMF 2.1](https://img.shields.io/badge/SMF-2.1-3f73a0)
 
-- Developed by [Diego Andrés](https://github.com/DiegoAndresCortes)
-- Original author: [ディン1031](https://www.simplemachines.org/community/index.php?action=profile;u=10466)
+Developed by [Diego Andrés](https://github.com/DiegoAndresCortes)
 
 ## Introduction
-* A very simple way to grant moderator privilegies to your users in specific boards
+Profile Moderator Management provides a very simple way to grant moderator privileges to your users in specific boards.
 
-## Requirements
-* SMF 2.1 only
+### Features
+- Remove/Add the user as moderator from their profile
+- Select multiple boards at once
+- Select entire categories
 
-## How to install
-* You can install Profile Moderator Management through the package manager of your forum administration.
-
-## Changelog
-You can find the changelog for Profile Moderator Management on SMF Tricks: [Changelog](https://smftricks.com/index.php?topic=2016.0)
-
+### Localization
+- ![English](https://www.simplemachines.org/site_images/lang/english.gif) English
+- ![Russian](https://www.simplemachines.org/site_images/lang/spanish_es.gif) Spanish
+---
+### [Changelog](https://github.com/SMFTricks/Profile-Mod-Management/blob/master/CHANGELOG.md)
+### [GitHub](https://github.com/SMFTricks/Profile-Mod-Management)
