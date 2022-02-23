@@ -8,7 +8,7 @@
 #### 3.1 - 28 September 2021
 - ![Improvement](https://smftricks.com/assets/changelog/tag--pencil.png) Moved languages to a dedicated language file.
 - ![Improvement](https://smftricks.com/assets/changelog/tag--pencil.png) Code improvements.
-
+---
 #### 3.0.1 - 23 April 2020
 - ![Translation](https://smftricks.com/assets/changelog/language.png) Fix typos in spanish translation.
 - ![Bug Fix](https://smftricks.com/assets/changelog/bug--minus.png) Fixed incorrect language file names.
